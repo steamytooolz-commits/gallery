@@ -1,0 +1,35 @@
+# Gradle & Build Cache
+.gradle/
+build/
+**/build/
+.build-outputs/
+
+# Android Studio & IDE Configs
+.idea/
+*.iml
+*.ipr
+*.iws
+local.properties
+.navigation/
+captures/
+.externalNativeBuild/
+
+# Environment & Private Secrets
+.env
+secrets.properties
+signing/
+*.jks
+*.keystore
+# Protect debug configs but prevent private credential leakage
+
+# System & Temp Files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.temp
+
+# Build Artifacts
+*.apk
+*.ap_
+*.aab
