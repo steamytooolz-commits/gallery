@@ -22,15 +22,14 @@ import com.example.ui.theme.MyApplicationTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        
+        // This requires a Material/AppCompat theme in the Manifest to work without crashing
+        enableEdgeToEdge() 
+        
         setContent {
             MyApplicationTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    SimulationApp()
-                }
+                // TODO: Replace 'YourRootComposable()' with the actual name of your main screen
+                // For example: MainScreen() or GalleryApp()
             }
         }
     }
